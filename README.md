@@ -100,10 +100,10 @@ The environment verifies:
 
 Below is a waveform snippet captured during simulation, showing clocked read/write transactions:
 
-![Waveform](images/sync_fifo_waveform.png)
+![Waveform](images/Synchronous_FIFO_waveform.png)
 
 **Signals shown:**  
-`clk`, `rstn`, `wr_en`, `rd_en`, `din`, `dout`, `empty`, `full`
+`clk`, `rstn`, `rd_en`, `wr_en`, `din`, `dout`, `empty`, `full`
 
 ------------------------------------------------------------------------
 
