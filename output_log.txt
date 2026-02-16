@@ -1,0 +1,347 @@
+[2026-02-16 21:32:56 UTC] vlib work && vlog '-timescale' '1ns/1ns' +incdir+$RIVIERA_HOME/vlib/uvm-1.2/src -l uvm_1_2 -err VCP2947 W9 -err VCP2974 W9 -err VCP3003 W9 -err VCP5417 W9 -err VCP6120 W9 -err VCP7862 W9 -err VCP2129 W9 design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+WARNING VCP2803 "Function this.randomize result is ignored." "testbench.sv" 55  21
+MESSAGE "Unit top modules: tb_top."
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time: 6[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2025 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.7 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 6 (50.00%) other processes in SLP
+# SLP: 26 (0.09%) signals in SLP and 16 (0.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 29308 kB (elbread=2094 elab2=22455 kernel=4758 sdf=0)
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test test...
+# KERNEL: UVM_INFO /home/runner/testbench.sv(56) @ 0: uvm_test_top.env1.agent1.seqr1@@myseq1 [myseq] generating num=75 transactions 
+# KERNEL: 
+# KERNEL: [0] [FIFO] rstn=0,wr_en=0 din=0x0 rd_en=0 dout=0xxxxx empty=x full=x
+# KERNEL: [5000] [FIFO] rstn=0,wr_en=0 din=0x0 rd_en=0 dout=0x0 empty=1 full=0
+# KERNEL: [25000] [FIFO] rstn=1,wr_en=0 din=0xc649 rd_en=0 dout=0x0 empty=1 full=0
+# KERNEL: [35000] [FIFO] rstn=1,wr_en=1 din=0xe37c rd_en=0 dout=0x0 empty=1 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 45000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=e37c
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 45000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=e37c
+# KERNEL: 
+# KERNEL: [45000] [FIFO] rstn=1,wr_en=1 din=0x5fc0 rd_en=0 dout=0x0 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 55000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=5fc0
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 55000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=5fc0
+# KERNEL: 
+# KERNEL: [55000] [FIFO] rstn=1,wr_en=0 din=0x3b15 rd_en=1 dout=0x0 empty=0 full=0
+# KERNEL: [65000] [FIFO] rstn=1,wr_en=1 din=0x757b rd_en=0 dout=0xe37c empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 75000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=757b
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 75000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=757b
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 75000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=e37c
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 75000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=e37c
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 75000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=e37c and act=e37c
+# KERNEL: 
+# KERNEL: [75000] [FIFO] rstn=1,wr_en=1 din=0xef2 rd_en=0 dout=0xe37c empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 85000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=ef2
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 85000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=ef2
+# KERNEL: 
+# KERNEL: [85000] [FIFO] rstn=1,wr_en=1 din=0x77a rd_en=0 dout=0xe37c empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 95000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=77a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 95000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=77a
+# KERNEL: 
+# KERNEL: [95000] [FIFO] rstn=1,wr_en=0 din=0x5f13 rd_en=0 dout=0xe37c empty=0 full=0
+# KERNEL: [105000] [FIFO] rstn=1,wr_en=0 din=0x15bd rd_en=1 dout=0xe37c empty=0 full=0
+# KERNEL: [115000] [FIFO] rstn=1,wr_en=1 din=0x2b78 rd_en=0 dout=0x5fc0 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 125000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=2b78
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 125000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=2b78
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 125000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=5fc0
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 125000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=5fc0
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 125000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=5fc0 and act=5fc0
+# KERNEL: 
+# KERNEL: [125000] [FIFO] rstn=1,wr_en=1 din=0xa044 rd_en=0 dout=0x5fc0 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 135000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=a044
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 135000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=a044
+# KERNEL: 
+# KERNEL: [135000] [FIFO] rstn=1,wr_en=1 din=0x7421 rd_en=0 dout=0x5fc0 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 145000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=7421
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 145000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=7421
+# KERNEL: 
+# KERNEL: [145000] [FIFO] rstn=1,wr_en=0 din=0xa70f rd_en=0 dout=0x5fc0 empty=0 full=0
+# KERNEL: [155000] [FIFO] rstn=1,wr_en=1 din=0x390e rd_en=0 dout=0x5fc0 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 165000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=390e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 165000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=390e
+# KERNEL: 
+# KERNEL: [165000] [FIFO] rstn=1,wr_en=1 din=0x2a1e rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 175000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=2a1e
+# KERNEL: 
+# KERNEL: [175000] [FIFO] rstn=1,wr_en=0 din=0x7a3f rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: [185000] [FIFO] rstn=1,wr_en=1 din=0x2971 rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 195000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=2971
+# KERNEL: 
+# KERNEL: [195000] [FIFO] rstn=1,wr_en=1 din=0x37b4 rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 205000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=37b4
+# KERNEL: 
+# KERNEL: [205000] [FIFO] rstn=1,wr_en=1 din=0xa508 rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 215000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=a508
+# KERNEL: 
+# KERNEL: [215000] [FIFO] rstn=1,wr_en=1 din=0x716d rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 225000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=716d
+# KERNEL: 
+# KERNEL: [225000] [FIFO] rstn=1,wr_en=1 din=0x9ce3 rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 235000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=9ce3
+# KERNEL: 
+# KERNEL: [235000] [FIFO] rstn=1,wr_en=0 din=0x276a rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: [245000] [FIFO] rstn=1,wr_en=1 din=0x1102 rd_en=0 dout=0x5fc0 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 255000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=1102
+# KERNEL: 
+# KERNEL: [255000] [FIFO] rstn=1,wr_en=0 din=0x59ab rd_en=1 dout=0x5fc0 empty=0 full=1
+# KERNEL: [265000] [FIFO] rstn=1,wr_en=1 din=0x165 rd_en=0 dout=0x757b empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 275000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=165
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 275000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=165
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 275000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=757b
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 275000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=757b
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 275000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=757b and act=757b
+# KERNEL: 
+# KERNEL: [275000] [FIFO] rstn=1,wr_en=1 din=0x830 rd_en=0 dout=0x757b empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 285000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=830
+# KERNEL: 
+# KERNEL: [285000] [FIFO] rstn=1,wr_en=0 din=0x6e0c rd_en=0 dout=0x757b empty=0 full=1
+# KERNEL: [295000] [FIFO] rstn=1,wr_en=0 din=0x32f9 rd_en=0 dout=0x757b empty=0 full=1
+# KERNEL: [305000] [FIFO] rstn=1,wr_en=0 din=0x56f7 rd_en=1 dout=0x757b empty=0 full=1
+# KERNEL: [315000] [FIFO] rstn=1,wr_en=0 din=0xda06 rd_en=1 dout=0xef2 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 325000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=1 empty=0 dout=ef2
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 325000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=ef2
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 325000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=ef2 and act=ef2
+# KERNEL: 
+# KERNEL: [325000] [FIFO] rstn=1,wr_en=1 din=0xbc26 rd_en=0 dout=0x77a empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 335000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=bc26
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 335000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=bc26
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 335000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=77a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 335000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=77a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 335000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=77a and act=77a
+# KERNEL: 
+# KERNEL: [335000] [FIFO] rstn=1,wr_en=1 din=0xfd57 rd_en=0 dout=0x77a empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 345000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=fd57
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 345000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=fd57
+# KERNEL: 
+# KERNEL: [345000] [FIFO] rstn=1,wr_en=0 din=0x9d99 rd_en=1 dout=0x77a empty=0 full=1
+# KERNEL: [355000] [FIFO] rstn=1,wr_en=1 din=0x9cec rd_en=0 dout=0x2b78 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 365000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=9cec
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 365000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=9cec
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 365000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=2b78
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 365000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=2b78
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 365000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=2b78 and act=2b78
+# KERNEL: 
+# KERNEL: [365000] [FIFO] rstn=1,wr_en=0 din=0xfb50 rd_en=1 dout=0x2b78 empty=0 full=1
+# KERNEL: [375000] [FIFO] rstn=1,wr_en=1 din=0xb8c5 rd_en=0 dout=0xa044 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 385000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=b8c5
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 385000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=b8c5
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 385000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=a044
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 385000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=a044
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 385000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=a044 and act=a044
+# KERNEL: 
+# KERNEL: [385000] [FIFO] rstn=1,wr_en=1 din=0xd54b rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 395000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=d54b
+# KERNEL: 
+# KERNEL: [395000] [FIFO] rstn=1,wr_en=1 din=0x50e2 rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 405000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=50e2
+# KERNEL: 
+# KERNEL: [405000] [FIFO] rstn=1,wr_en=1 din=0x2b8a rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 415000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=2b8a
+# KERNEL: 
+# KERNEL: [415000] [FIFO] rstn=1,wr_en=1 din=0x6543 rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 425000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=6543
+# KERNEL: 
+# KERNEL: [425000] [FIFO] rstn=1,wr_en=1 din=0xfe0d rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 435000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=fe0d
+# KERNEL: 
+# KERNEL: [435000] [FIFO] rstn=1,wr_en=0 din=0xf5e8 rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: [445000] [FIFO] rstn=1,wr_en=1 din=0x4cd4 rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 455000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=4cd4
+# KERNEL: 
+# KERNEL: [455000] [FIFO] rstn=1,wr_en=0 din=0x2d1 rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: [465000] [FIFO] rstn=1,wr_en=1 din=0x17df rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 475000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=17df
+# KERNEL: 
+# KERNEL: [475000] [FIFO] rstn=1,wr_en=1 din=0x8bfe rd_en=0 dout=0xa044 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 485000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=8bfe
+# KERNEL: 
+# KERNEL: [485000] [FIFO] rstn=1,wr_en=0 din=0x5f2e rd_en=1 dout=0xa044 empty=0 full=1
+# KERNEL: [495000] [FIFO] rstn=1,wr_en=0 din=0x916f rd_en=0 dout=0x7421 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 505000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=7421
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 505000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=7421
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 505000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=7421 and act=7421
+# KERNEL: 
+# KERNEL: [505000] [FIFO] rstn=1,wr_en=0 din=0x22c1 rd_en=0 dout=0x7421 empty=0 full=0
+# KERNEL: [515000] [FIFO] rstn=1,wr_en=0 din=0x1324 rd_en=0 dout=0x7421 empty=0 full=0
+# KERNEL: [525000] [FIFO] rstn=1,wr_en=1 din=0x6298 rd_en=0 dout=0x7421 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 535000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=6298
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 535000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=6298
+# KERNEL: 
+# KERNEL: [535000] [FIFO] rstn=1,wr_en=1 din=0x111d rd_en=0 dout=0x7421 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 545000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=111d
+# KERNEL: 
+# KERNEL: [545000] [FIFO] rstn=1,wr_en=0 din=0x1eb3 rd_en=1 dout=0x7421 empty=0 full=1
+# KERNEL: [555000] [FIFO] rstn=1,wr_en=1 din=0x8b5a rd_en=0 dout=0x390e empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 565000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=8b5a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 565000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=8b5a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 565000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=390e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 565000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=390e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 565000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=390e and act=390e
+# KERNEL: 
+# KERNEL: [565000] [FIFO] rstn=1,wr_en=0 din=0x5712 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: [575000] [FIFO] rstn=1,wr_en=1 din=0x81db rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 585000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=81db
+# KERNEL: 
+# KERNEL: [585000] [FIFO] rstn=1,wr_en=1 din=0xbb5 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 595000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=bb5
+# KERNEL: 
+# KERNEL: [595000] [FIFO] rstn=1,wr_en=1 din=0xf4a0 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 605000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=f4a0
+# KERNEL: 
+# KERNEL: [605000] [FIFO] rstn=1,wr_en=1 din=0x3c9c rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 615000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=3c9c
+# KERNEL: 
+# KERNEL: [615000] [FIFO] rstn=1,wr_en=1 din=0xe3a9 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 625000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=e3a9
+# KERNEL: 
+# KERNEL: [625000] [FIFO] rstn=1,wr_en=1 din=0xe9c7 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 635000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=e9c7
+# KERNEL: 
+# KERNEL: [635000] [FIFO] rstn=1,wr_en=0 din=0x4ef6 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: [645000] [FIFO] rstn=1,wr_en=1 din=0x1336 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 655000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=1336
+# KERNEL: 
+# KERNEL: [655000] [FIFO] rstn=1,wr_en=0 din=0x3687 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: [665000] [FIFO] rstn=1,wr_en=1 din=0xb8e9 rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 675000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=b8e9
+# KERNEL: 
+# KERNEL: [675000] [FIFO] rstn=1,wr_en=0 din=0x9a5c rd_en=0 dout=0x390e empty=0 full=1
+# KERNEL: [685000] [FIFO] rstn=1,wr_en=0 din=0xdae0 rd_en=1 dout=0x390e empty=0 full=1
+# KERNEL: [695000] [FIFO] rstn=1,wr_en=1 din=0x7a75 rd_en=0 dout=0x165 empty=0 full=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 705000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=0 din=7a75
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 705000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO PUSH DATA=7a75
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(159) @ 705000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 rden=0 empty=0 dout=165
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(225) @ 705000: uvm_test_top.env1.scoreboard1 [scoreboard] REF FIFO POP DATA=165
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(227) @ 705000: uvm_test_top.env1.scoreboard1 [scoreboard] FIFO DATA MATCH exp=165 and act=165
+# KERNEL: 
+# KERNEL: [705000] [FIFO] rstn=1,wr_en=1 din=0x791b rd_en=0 dout=0x165 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 715000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=791b
+# KERNEL: 
+# KERNEL: [715000] [FIFO] rstn=1,wr_en=0 din=0xd6d2 rd_en=0 dout=0x165 empty=0 full=1
+# KERNEL: [725000] [FIFO] rstn=1,wr_en=0 din=0x939a rd_en=0 dout=0x165 empty=0 full=1
+# KERNEL: [735000] [FIFO] rstn=1,wr_en=1 din=0xaf73 rd_en=0 dout=0x165 empty=0 full=1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(145) @ 745000: uvm_test_top.env1.agent1.monitor1 [monitor] monitor rstn=1 wren=1 full=1 din=af73
+# KERNEL: 
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 745000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 745000: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :   95
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [RNTST]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [monitor]    54
+# KERNEL: [myseq]     1
+# KERNEL: [scoreboard]    37
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 745 ns,  Iteration: 63,  Instance: /tb_top,  Process: @INITIAL#333_2@.
+# KERNEL: stopped at time: 745 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Finding VCD file...
+./dump.vcd
+[2026-02-16 21:33:10 UTC] Opening EPWave...
+Done
